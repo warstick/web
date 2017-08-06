@@ -1,0 +1,261 @@
+$icon-font-path: '../fonts/';
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "bower_components/components-font-awesome/scss/font-awesome.scss";
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+// endbower
+
+/* Space out content a bit */
+body {
+  padding-top: 0;
+  font-family: 'Roboto';
+}
+
+/** Header Styles **/
+
+.fit-btn {
+    border-radius: 0px;
+    border-color: #0096d6;
+    background-color: #0096d6;
+    &:hover, &:focus {
+      background-color: #0096d6;
+      border-color: #0096d6;
+    }
+}
+
+header {
+  background: url('../../images/header/header.png');
+  height: 747px;
+
+  .logo {
+    img {
+      margin-top: -15px;
+      margin-left: -40px;
+    }
+  }
+
+  .header {
+    background: rgba(0,0,0, 0.5);
+    height: 70px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    padding: 15px 10px;
+    z-index: 10000;
+
+    li {
+      a {
+        color: #fff;
+      }
+    }
+
+
+      .nav > li > a:hover, .nav > li > a:focus {
+        background: transparent;
+      }
+  }
+
+  .submenu {
+    background: rgba(249, 244, 241, 0.5);
+    height: 50px;
+    width: 100%;
+    padding: 5px 0px;
+    margin-top: 70px;
+
+    li {
+      a {
+        &.active {
+           color:#242424; 
+        }
+        color:#929292;
+      }
+    }
+
+
+    .nav > li > a:hover, .nav > li > a:focus {
+      background: transparent;
+    }
+  }
+
+  .banner-info {
+    margin-top: 22rem;
+    color: white;
+    h2 {
+      font-size: 52px;
+          padding-right: 18rem;
+    }
+    p {
+      padding-right: 36rem;
+      line-height: 16px;
+    }
+  }
+}
+
+.quotes-container {
+  height: 276px;
+  background: #1e1e1e;
+  color: #fff;
+  .quote, .author {
+    color: #0096d6;
+  }
+  .quote {
+    margin-top: 55px;
+  }
+
+  .container {
+    height: 260px;
+  }
+
+  p {
+    font-size: 17.5px;
+    padding-top: 80px;
+  }
+
+  .carousel-indicators {
+    li {
+         border: 1px solid #0096d6;
+        &.active {
+          background-color: #0096d6;
+        }
+    }
+    
+  }
+}
+
+.join-today {
+  height: 135px;
+  padding-top: 4rem;
+  p {
+    font-size: 32px;
+    line-height: 62px;
+  }
+  button {
+    height: 62px;
+    width: 220px;
+    font-size: 17.5px;
+  }
+}
+
+.main-section {
+  .col-md-3 {
+    height: 298px;
+    cursor: pointer;
+    .weight-loss-image-info {
+      .head{
+        font-size: 16px;
+        font-weight: 500;
+      }
+      .subscript {
+        display: block;
+        font-size: 12px;
+        color: #929292;
+      }
+    }
+  }
+
+  .view-more {
+      margin: 2rem 0 5rem 0;
+    }
+
+  .main-section-content {
+    text-align: center;
+    p {
+      padding: 0px 25px;
+    }
+  }
+}
+
+footer{
+  height: 50px;
+  padding: 0px 30px;
+  background: #1e1e1e;
+  .sitemap, .social-links {
+    margin-top: 6px;
+    li {
+      a {
+        padding: 15px 2px;
+        font-size: 10px;
+        color: #929292;
+        &:hover, &:focus{
+            background-color: transparent;
+        }
+      }
+      
+    }
+  }
+  .social-links {
+    margin-left: 8rem;
+     li a {
+        padding: 15px 8px;
+     }
+  }
+
+  .copy-right {
+    font-size: 10px;
+    margin-top: 20px;
+    color: #929292;
+    .dropdown {
+      margin-left: 10px;
+      i {
+        margin: 0px 2px;
+      }
+    }
+  }
+}
+
+
+/* The side navigation menu */
+.sidenav {
+    height: 90%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 70px;
+    right: 0;
+    background-color: #2b2a2a; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+
+    .nav-pills > li > a {
+      border-radius: 0px;
+      padding-left: 20px;
+      
+      color: #929292;
+    }
+    .nav > li > a:hover, .nav > li > a:focus, .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+      background: #2b2a2a;
+      color: #fff;
+    }
+
+    .dropdown-menu {
+      position: relative;
+      width: 100%;
+      border: 0px;
+      margin: 0px;
+      border-radius: 0px;
+      background: #141414;
+        & > li > a{
+          color: #929292;
+          &:hover {
+            background: transparent;
+            color: #fff;
+          }
+        }
+           
+    
+    }
+
+    .btn {
+      margin-top: 2rem;
+      margin-left: 5rem;
+    }
+
+}
+
+
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    max-width: 1024px;
+  }
+}

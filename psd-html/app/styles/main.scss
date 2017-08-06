@@ -1,9 +1,10 @@
 $icon-font-path: '../fonts/';
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// endbower
+
 @import "bower_components/components-font-awesome/scss/font-awesome.scss";
 @import url('https://fonts.googleapis.com/css?family=Roboto');
-// endbower
 
 /* Space out content a bit */
 body {
@@ -247,7 +248,7 @@ footer{
 
     .btn {
       margin-top: 2rem;
-      margin-left: 5rem;
+      margin-left: 2rem;
     }
 
 }
